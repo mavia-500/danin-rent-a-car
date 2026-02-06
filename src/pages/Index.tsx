@@ -20,6 +20,7 @@ const Index = () => {
       <FAQ />
       <Footer />
       <SocialSidebar />
+      {/* <></> */}
     </main>
   );
 };
