@@ -1,11 +1,11 @@
 import { Users, DoorOpen, Briefcase, Cog } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import carGrande from "@/assets/car-grande.png";
-import carCivic from "@/assets/car-civic.png";
-import carMercedes from "@/assets/car-mercedes.png";
-import carFortuner from "@/assets/car-fortuner.png";
-import carAudi from "@/assets/car-audi.png";
-import carLandcruiser from "@/assets/car-landcruiser.png";
+// import carGrande from "@/assets/car-grande.png";
+// import carCivic from "@/assets/car-civic.png";
+// import carMercedes from "@/assets/car-mercedes.png";
+// import carFortuner from "@/assets/car-fortuner.png";
+// import carAudi from "@/assets/car-audi.png";
+// import carLandcruiser from "@/assets/car-landcruiser.png";
 
 const cars = [
   {
@@ -35,15 +35,15 @@ const cars = [
   {
     name: "Toyota Fortuner",
     category: "SUV",
-    image: carFortuner,
+    image: "car-fortuner.png",
     price: 18000,
     persons: 7,
     doors: 5,
   },
   {
-    name: "Audi A6",
+    name: "Audi A5",
     category: "Luxury Sedan",
-    image: carAudi,
+    image: "Audi_A6_Front.jpg",
     price: 40000,
     persons: 5,
     doors: 4,
@@ -92,7 +92,7 @@ const cars = [
     doors: 4,
   },
 
-   {
+  {
     name: "Mercedes s class",
     // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
     image: "mercedes-s-class-sedan-side-view-2022.webp",
@@ -101,7 +101,7 @@ const cars = [
     doors: 4,
   },
 
-   {
+  {
     name: "Mercedes e300",
     // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
     image: "781_1_39648.webp",
@@ -110,8 +110,7 @@ const cars = [
     doors: 4,
   },
 
-
-   {
+  {
     name: "Revo",
     // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
     image: "The-New-Toyota-Hilux-Revo-2021-All-You-Need-to-Know-Featured.webp",

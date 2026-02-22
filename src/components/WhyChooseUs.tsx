@@ -1,5 +1,5 @@
 import { Car, Headphones, MapPin, Shield } from 'lucide-react';
-import carFortuner from '@/assets/car-fortuner.png';
+import carFortuner from '/assets/car-fortuner.png';
 
 const features = [
   {

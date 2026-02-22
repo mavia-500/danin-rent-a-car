@@ -1,6 +1,6 @@
 import { CheckCircle, Car, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import aboutCars from "@/assets/about-cars.jpg";
+import aboutCars from "/assets/about-cars.jpg";
 
 const features = [
   {
