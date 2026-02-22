@@ -37,7 +37,7 @@
     --radius: 0.5rem;
 
     /* Custom tokens */
-    --dark: 220 13% 10%;
+     --dark: 220 13% 10%;
     --dark-light: 220 13% 15%;
     --dark-lighter: 220 13% 20%;
     --gold: 45 93% 47%;
@@ -174,4 +174,4 @@
       transform: translateY(0);
     }
   }
-}
+} 
