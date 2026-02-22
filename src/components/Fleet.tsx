@@ -9,122 +9,64 @@ import { Button } from "@/components/ui/button";
 
 const cars = [
   {
-    name: "Mercedes C200",
-    // category: 'Sedan',
-    image: "203195_Mercedes_CClass_C200_0115.webp",
-    price: 115000,
-    persons: 5,
+    name: "Alto",
+    // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
+    image: "images (2).webp",
+    price: 4500,
+    persons: 4,
     doors: 4,
   },
+
   {
     name: "Corrola Gli",
     // category: 'Sedan',
     image: "Why-a-GLi-Car-is-a-Good-Rental-Vehicle-Choice-Featured-Image.jpg",
-    price: 6000,
-    persons: 5,
+    price: 5000,
+    persons: 4,
     doors: 4,
   },
+
+  {
+    name: "Altas Grandy",
+    // category: 'Sedan',
+    image: "images (4).webp",
+    price: 6000,
+    persons: 4,
+    doors: 4,
+  },
+
   {
     name: "Honda civic",
     // category: 'Luxury Sedan',
     image: "Honda_Civic_e-HEV_Sport_(XI)_–_f_30062024.jpg",
     price: 8000,
-    persons: 5,
-    doors: 4,
-  },
-  {
-    name: "Toyota Fortuner",
-    category: "SUV",
-    image: "car-fortuner.png",
-    price: 18000,
-    persons: 7,
-    doors: 5,
-  },
-  {
-    name: "Audi A5",
-    category: "Luxury Sedan",
-    image: "Audi_A6_Front.jpg",
-    price: 40000,
-    persons: 5,
-    doors: 4,
-  },
-  {
-    name: "Audi A6",
-    // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
-    image: "Audi_A6_Front.jpg",
-    price: 46000,
-    persons: 5,
+    persons: 4,
     doors: 4,
   },
 
   {
-    name: "Alto",
-    // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
-    image: "images (2).webp",
-    price: 4500,
-    persons: 5,
+    name: "Honda BRV",
+    // category: 'Sedan',
+    image: "Honda-BRV-2.webp",
+    price: 8000,
+    persons: 4,
     doors: 4,
   },
-
-  {
-    name: "Prado",
-    // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
-    image: "images (3).webp",
-    price: 15000,
-    persons: 5,
-    doors: 4,
-  },
-
-  {
-    name: "V8",
-    // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
-    image: "images (01).webp",
-    price: 23000,
-    persons: 5,
-    doors: 4,
-  },
-  {
+{
     name: "Changan Karwan",
     // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
     image: "Changan_Karvaan_.webp",
     price: 7000,
-    persons: 5,
+    persons: 6,
     doors: 4,
   },
 
-  {
-    name: "Mercedes s class",
-    // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
-    image: "mercedes-s-class-sedan-side-view-2022.webp",
-    price: 120000,
-    persons: 5,
-    doors: 4,
-  },
-
-  {
-    name: "Mercedes e300",
-    // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
-    image: "781_1_39648.webp",
-    price: 50000,
-    persons: 5,
-    doors: 4,
-  },
-
-  {
-    name: "Revo",
+   {
+    name: "Toyota Revo",
     // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
     image: "The-New-Toyota-Hilux-Revo-2021-All-You-Need-to-Know-Featured.webp",
     price: 13000,
-    persons: 5,
-    doors: 4,
-  },
-
-  {
-    name: "Range Rover",
-    // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
-    image: "2022-range-rover-se-lwb-210-1665593853.webp",
-    price: 120000,
-    persons: 5,
+    persons: 4,
     doors: 4,
   },
 
@@ -133,16 +75,104 @@ const cars = [
     // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
     image: "Toyota-Fortuner-Legender-2023-1-wpv_325x325.webp",
     price: 16000,
-    persons: 5,
+    persons: 6,
     doors: 4,
   },
+
+   {
+    name: "Prado",
+    // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
+    image: "images (3).webp",
+    price: 15000,
+    persons: 6,
+    doors: 4,
+  },
+
+
+   {
+    name: "Land cruser V8",
+    // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
+    image: "images (01).webp",
+    price: 23000,
+    persons: 6,
+    doors: 4,
+  },
+  {
+    name: "Mercedes C200",
+    // category: 'Sedan',
+    image: "203195_Mercedes_CClass_C200_0115.webp",
+    price: 115000,
+    persons: 4,
+    doors: 4,
+  },
+
+  // {
+  //   name: "Toyota Fortuner",
+  //   category: "SUV",
+  //   image: "car-fortuner.png",
+  //   price: 15000,
+  //   persons: 7,
+  //   doors: 5,
+  // },
+  {
+    name: "Audi A5",
+    category: "Luxury Sedan",
+    image: "Audi_A6_Front.jpg",
+    price: 35000,
+    persons: 4,
+    doors: 4,
+  },
+  {
+    name: "Audi A6",
+    // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
+    image: "Audi_A6_Front.jpg",
+    price: 46000,
+    persons: 4,
+    doors: 4,
+  },
+
+ 
+
+ 
+  
+
+  {
+    name: "Mercedes s class",
+    // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
+    image: "mercedes-s-class-sedan-side-view-2022.webp",
+    price: 120000,
+    persons: 4,
+    doors: 4,
+  },
+
+  {
+    name: "Mercedes e300",
+    // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
+    image: "781_1_39648.webp",
+    price: 50000,
+    persons: 4,
+    doors: 4,
+  },
+
+ 
+
+  {
+    name: "Range Rover",
+    // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
+    image: "2022-range-rover-se-lwb-210-1665593853.webp",
+    price: 120000,
+    persons: 6,
+    doors: 4,
+  },
+
+  
 
   {
     name: "Grand cabin",
     // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
     image: "Toyota-Hiace-Grand-Cabin-for-Rent.webp",
     price: 12000,
-    persons: 5,
+    persons: 8,
     doors: 4,
   },
 
@@ -151,7 +181,7 @@ const cars = [
     // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
     image: "Cover.webp",
     price: 10000,
-    persons: 5,
+    persons: 8,
     doors: 4,
   },
 
@@ -160,7 +190,7 @@ const cars = [
     // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
     image: "coaster2.webp",
     price: 16000,
-    persons: 5,
+    persons: 16,
     doors: 4,
   },
 
@@ -169,7 +199,7 @@ const cars = [
     // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
     image: "coster1.webp",
     price: 20000,
-    persons: 5,
+    persons: 16,
     doors: 4,
   },
 ];

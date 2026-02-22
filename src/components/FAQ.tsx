@@ -7,25 +7,25 @@ import {
 
 const faqs = [
   {
-    question: "How can I book a car with Classic Motors & Rent A Car?",
+    question: "How can I book a car with Al-Burak Rent a Car & Tour?",
     answer: "You can book easily through our website, call, or WhatsApp. Just choose your vehicle, date, and location — we'll handle the rest."
   },
   {
     question: "Do you offer cars with drivers and self-drive options?",
-    answer: "Yes, we provide both self-drive and chauffeur-driven vehicles based on your preference and travel requirements."
+    answer: "Yes, we provide only cars with drivers"
   },
-  {
-    question: "What documents are required for self-drive car rental?",
-    answer: "You need a valid CNIC, driving license, and a refundable security deposit at the time of booking."
-  },
+  // {
+  //   question: "What documents are required for self-drive car rental?",
+  //   answer: "You need a valid CNIC, driving license, and a refundable security deposit at the time of booking."
+  // },
   {
     question: "What areas do you service?",
-    answer: "We operate nationwide across Pakistan, with primary offices in Islamabad, Lahore, and Karachi. We also provide intercity transfers and long-term rentals."
+    answer: "We operate nationwide across Pakistan, with primary offices in Islamabad. We also provide intercity transfers and long-term rentals."
   },
-  {
-    question: "Are your vehicles insured?",
-    answer: "Yes, all our vehicles are fully insured for your safety and peace of mind. Additional coverage options are available upon request."
-  },
+  // {
+  //   question: "Are your vehicles insured?",
+  //   answer: "Yes, all our vehicles are fully insured for your safety and peace of mind. Additional coverage options are available upon request."
+  // },
 ];
 
 const FAQ = () => {

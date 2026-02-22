@@ -38,10 +38,10 @@ const About = () => {
           <div>
             <p className="section-subtitle mb-4">About Us</p>
             <h2 className="section-title text-foreground mb-6">
-              About Al-Burak Motors & Rent A Car
+              About Al-Burak Rent a Car & Tour
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Based in Islamabad, Al-Burak Motors & Rent A Car is a trusted name
+              Based in Islamabad, Al-Burak Rent a Car & Tour is a trusted name
               in nationwide car rental services, offering safe, comfortable, and
               affordable travel solutions across Pakistan.
             </p>
