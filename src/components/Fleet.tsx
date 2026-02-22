@@ -194,7 +194,7 @@ const Fleet = () => {
               {/* Image */}
               <div className="relative h-48 bg-muted flex items-center justify-center p-4">
                 <img
-                  src={`src/assets/${car.image}`}
+                  src={`/assets/${car.image}`}
                   alt={car.name}
                   className="h-full w-full object-cover"
                 />
