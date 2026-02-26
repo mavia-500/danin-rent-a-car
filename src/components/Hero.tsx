@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-secondary-foreground">
           <p className="section-subtitle justify-center mb-4">
-            Welcome to Al-Burak Rent A Car & Tours
+            Welcome to Al Buraq Rent A car & Tours
           </p>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-wider leading-tight">
@@ -35,13 +35,13 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-           
-           <a href="#fleet">
-            <Button className="btn-primary text-lg py-6" size="lg">
-              Available Cars
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-           </a>
+
+            <a href="#fleet">
+              <Button className="btn-primary text-lg py-6" size="lg">
+                Available Cars
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </a>
           </div>
         </div>
 

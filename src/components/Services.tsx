@@ -1,29 +1,33 @@
 import { Car, Users, Plane, PartyPopper, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from "next/link";
+import { useHref } from 'react-router-dom';
 
 const services = [
-  
+
   {
     icon: Users,
     title: 'Car Rental with Driver',
     description: 'Reliable car rental with drivers for smooth journeys.',
+    href: '#fleet'
   },
   {
     icon: Plane,
     title: 'Airport Transfer',
     description: 'Trusted airport transfer for safe, fast and calm rides.',
+    href: '#fleet'
   },
   {
     icon: PartyPopper,
     title: 'Weddings and Events',
     description: 'Premium vehicles for your events & weddings.',
+    href: '#fleet'
   },
 ];
 
 const Services = () => {
   return (
-    <section id="services" className="py-24 dark-section">
+    <section id="our-services" className="py-24 dark-section">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -36,8 +40,8 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {services.map((service) => (
-            
-            
+
+
             <div key={service.title} className="service-card group">
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary-foreground/20 transition-colors">
                 <service.icon className="w-8 h-8 text-primary group-hover:text-primary-foreground transition-colors" />
@@ -58,7 +62,7 @@ const Services = () => {
         {/* Description & CTA */}
         <div className="text-center">
           <p className="text-secondary-foreground/70 max-w-2xl mx-auto mb-8">
-            Discover our range of car rental services designed to meet all your travel needs. 
+            Discover our range of car rental services designed to meet all your travel needs.
             From a diverse fleet of vehicles to flexible rental plans.
           </p>
           <Button variant="outline" className="btn-outline">

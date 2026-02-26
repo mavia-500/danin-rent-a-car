@@ -19,7 +19,7 @@ const features = [
 
 const About = () => {
   return (
-    <section id="about" className="py-24 pt-32 bg-background">
+    <section id="about-us" className="py-24 pt-32 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
@@ -38,10 +38,10 @@ const About = () => {
           <div>
             <p className="section-subtitle mb-4">About Us</p>
             <h2 className="section-title text-foreground mb-6">
-              About Al-Burak Rent a Car & Tour
+              About Al Buraq Rent A car & Tour
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Based in Islamabad, Al-Burak Rent a Car & Tour is a trusted name
+              Based in Islamabad, Al Buraq Rent A car & Tour is a trusted name
               in nationwide car rental services, offering safe, comfortable, and
               affordable travel solutions across Pakistan.
             </p>
@@ -65,7 +65,7 @@ const About = () => {
             </div>
 
             <a
-              href="https://wa.me/923336732926"
+              href="https://wa.me/923336732926?text=can%20you%20share%20details%20about%20your%20services"
               target="_blank"
               rel="noopener noreferrer"
             >

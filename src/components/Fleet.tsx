@@ -1,12 +1,6 @@
 import { Users, DoorOpen, Briefcase, Cog } from "lucide-react";
 import { Button } from "@/components/ui/button";
-// import carGrande from "@/assets/car-grande.png";
-// import carCivic from "@/assets/car-civic.png";
-// import carMercedes from "@/assets/car-mercedes.png";
-// import carFortuner from "@/assets/car-fortuner.png";
-// import carAudi from "@/assets/car-audi.png";
-// import carLandcruiser from "@/assets/car-landcruiser.png";
-
+import { useState } from "react";
 const cars = [
   {
     name: "Alto",
@@ -27,7 +21,7 @@ const cars = [
   },
 
   {
-    name: "Altas Grandy",
+    name: "Altis Grande",
     // category: 'Sedan',
     image: "images (4).webp",
     price: 6000,
@@ -36,10 +30,28 @@ const cars = [
   },
 
   {
+    name: "Toyota Yaris",
+    // category: 'Sedan',
+    image: "yaris3.webp",
+    price: 6000,
+    persons: 4,
+    doors: 4,
+  },
+
+  {
     name: "Honda civic",
     // category: 'Luxury Sedan',
-    image: "Honda_Civic_e-HEV_Sport_(XI)_–_f_30062024.jpg",
+    image: "2022-honda-civic-angular-front-exterior-view_100829781_l.jpg",
     price: 8000,
+    persons: 4,
+    doors: 4,
+  },
+
+  {
+    name: "Honda civic 11 Gen",
+    // category: 'Luxury Sedan',
+    image: "Honda_Civic_e-HEV_Sport_(XI)_–_f_30062024.jpg",
+    price: 12000,
     persons: 4,
     doors: 4,
   },
@@ -48,11 +60,11 @@ const cars = [
     name: "Honda BRV",
     // category: 'Sedan',
     image: "Honda-BRV-2.webp",
-    price: 8000,
+    price: 7000,
     persons: 4,
     doors: 4,
   },
-{
+  {
     name: "Changan Karwan",
     // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
     image: "Changan_Karvaan_.webp",
@@ -61,10 +73,10 @@ const cars = [
     doors: 4,
   },
 
-   {
+  {
     name: "Toyota Revo",
     // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
-    image: "The-New-Toyota-Hilux-Revo-2021-All-You-Need-to-Know-Featured.webp",
+    image: "Rent-a-Toyota-Revo.jpg",
     price: 13000,
     persons: 4,
     doors: 4,
@@ -79,7 +91,7 @@ const cars = [
     doors: 4,
   },
 
-   {
+  {
     name: "Prado",
     // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
     image: "images (3).webp",
@@ -89,8 +101,8 @@ const cars = [
   },
 
 
-   {
-    name: "Land cruser V8",
+  {
+    name: "Land Cruiser V8",
     // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
     image: "images (01).webp",
     price: 23000,
@@ -131,10 +143,10 @@ const cars = [
     doors: 4,
   },
 
- 
 
- 
-  
+
+
+
 
   {
     name: "Mercedes s class",
@@ -154,7 +166,7 @@ const cars = [
     doors: 4,
   },
 
- 
+
 
   {
     name: "Range Rover",
@@ -165,7 +177,7 @@ const cars = [
     doors: 4,
   },
 
-  
+
 
   {
     name: "Grand cabin",
@@ -204,7 +216,25 @@ const cars = [
   },
 ];
 
+const sendWhatsappMessage = (carName: string, carPrice: number) => {
+  const message = `I want to book a ${carName} for Rs ${carPrice.toLocaleString()} per day. Please share details. `;
+  const url = `https://wa.me/923336732926?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+  window.open(message, "_blank");
+};
+const ITEMS_PER_LOAD = 5;
+
 const Fleet = () => {
+
+  const [visibleCount, setVisibleCount] = useState(ITEMS_PER_LOAD);
+
+  const handleShowMore = () => {
+    setVisibleCount((prev) => prev + ITEMS_PER_LOAD);
+  };
+
+  const handleShowLess = () => {
+    setVisibleCount(ITEMS_PER_LOAD);
+  };
   return (
     <section id="fleet" className="py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -218,27 +248,21 @@ const Fleet = () => {
 
         {/* Cars Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {cars.map((car) => (
+          {cars.slice(0, visibleCount).map((car) => (
             <div key={car.name} className="fleet-card">
-              {/* Image */}
               <div className="relative h-48 bg-muted flex items-center justify-center p-4">
                 <img
                   src={`/assets/${car.image}`}
                   alt={car.name}
                   className="h-full w-full object-cover"
                 />
-                {/* <span className="absolute top-4 left-4 bg-primary text-primary-foreground text-xs px-3 py-1 rounded-full uppercase font-medium">
-                  {car.category}
-                </span> */}
               </div>
 
-              {/* Content */}
               <div className="p-6">
                 <h3 className="text-xl font-bold text-foreground mb-4">
                   {car.name}
                 </h3>
 
-                {/* Specs */}
                 <div className="flex gap-4 mb-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-1">
                     <Users className="w-4 h-4" />
@@ -252,13 +276,8 @@ const Fleet = () => {
                     <Briefcase className="w-4 h-4" />
                     <span>bags</span>
                   </div>
-                  {/* <div className="flex items-center gap-1">
-                    <Cog className="w-4 h-4" />
-                    <span>auto</span>
-                  </div> */}
                 </div>
 
-                {/* Price & CTA */}
                 <div className="flex items-center justify-between pt-4 border-t border-border">
                   <div>
                     <span className="text-2xl font-bold text-primary">
@@ -266,7 +285,7 @@ const Fleet = () => {
                     </span>
                     <span className="text-muted-foreground"> /day</span>
                   </div>
-                  <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg">
+                  <Button onClick={() => sendWhatsappMessage(car.name, car.price)} className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-lg">
                     Book Now
                   </Button>
                 </div>
@@ -275,13 +294,17 @@ const Fleet = () => {
           ))}
         </div>
 
-        {/* Note & CTA */}
+        {/* Show More / Show Less */}
         <div className="text-center">
-          <p className="text-muted-foreground mb-6">
-            All the rates are just for Islamabad City. For out of city the rates
-            are different.
-          </p>
-          <Button className="btn-primary">View All Cars</Button>
+          {visibleCount < cars.length ? (
+            <Button onClick={handleShowMore} className="btn-primary">
+              Show More
+            </Button>
+          ) : (
+            <Button onClick={handleShowLess} className="btn-primary">
+              Show Less
+            </Button>
+          )}
         </div>
       </div>
     </section>

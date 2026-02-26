@@ -14,6 +14,12 @@ const navLinks = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const sendWhatsappMessage = () => {
+    const message = `I want to book a car . Please share details. `;
+    const url = `https://wa.me/923336732926?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+    window.open(message, "_blank");
+  };
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4">
@@ -40,7 +46,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6">
+            <Button onClick={() => sendWhatsappMessage()} className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6">
               <Phone className="w-4 h-4 mr-2" />
               Book A Rental
             </Button>

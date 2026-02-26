@@ -7,7 +7,7 @@ import {
 
 const faqs = [
   {
-    question: "How can I book a car with Al-Burak Rent a Car & Tour?",
+    question: "How can I book a car with Al Buraq Rent A car  & Tour?",
     answer: "You can book easily through our website, call, or WhatsApp. Just choose your vehicle, date, and location — we'll handle the rest."
   },
   {
@@ -44,8 +44,8 @@ const FAQ = () => {
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem 
-                key={index} 
+              <AccordionItem
+                key={index}
                 value={`item-${index}`}
                 className="bg-dark-light rounded-lg px-6 border-0"
               >
