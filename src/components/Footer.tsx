@@ -75,7 +75,7 @@ const Footer = () => {
                     href="#services"
                     className="text-secondary-foreground/70 hover:text-primary transition-colors"
                   >
-                    {service}j
+                    {service}
                   </a>
                 </li>
               ))}
