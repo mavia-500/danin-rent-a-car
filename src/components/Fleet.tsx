@@ -39,10 +39,10 @@ const cars = [
   },
 
   {
-    name: "Honda civic",
+    name: "Honda civic X shape",
     // category: 'Luxury Sedan',
-    image: "2022-honda-civic-angular-front-exterior-view_100829781_l.jpg",
-    price: 8000,
+    image: "2020_76.webp",
+    price: 7000,
     persons: 4,
     doors: 4,
   },
@@ -86,7 +86,7 @@ const cars = [
     name: "Fortuner",
     // category: "2024-audi-a5-premium-plus-40-tfsi-quattro-angular-front-exterior-view_100906412_l.webp",
     image: "Toyota-Fortuner-Legender-2023-1-wpv_325x325.webp",
-    price: 16000,
+    price: 15000,
     persons: 6,
     doors: 4,
   },

@@ -13,7 +13,7 @@ const services = [
   },
   {
     icon: Plane,
-    title: 'Airport Transfer',
+    title: 'Airport Pickup',
     description: 'Trusted airport transfer for safe, fast and calm rides.',
     href: '#fleet'
   },
@@ -65,9 +65,9 @@ const Services = () => {
             Discover our range of car rental services designed to meet all your travel needs.
             From a diverse fleet of vehicles to flexible rental plans.
           </p>
-          <Button variant="outline" className="btn-outline">
+          {/* <Button variant="outline" className="btn-outline">
             View All Services
-          </Button>
+          </Button> */}
         </div>
       </div>
     </section>
