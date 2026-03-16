@@ -95,10 +95,10 @@ const Footer = () => {
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
                 <a
-                  href="tel:+923001234567"
+                  href="tel:+923200515737"
                   className="text-secondary-foreground/70 hover:text-primary transition-colors"
                 >
-                  +92 333 6732926
+                  +92 3200515737
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -119,7 +119,7 @@ const Footer = () => {
       <div className="border-t border-dark-lighter">
         <div className="container mx-auto px-4 py-6">
           <p className="text-center text-secondary-foreground/50 text-sm">
-            © {new Date().getFullYear()} Classic Motors & Rent A Car. All rights
+            © {new Date().getFullYear()} AL BURAQ RENT A CAR & Tour. All rights
             reserved.
           </p>
         </div>
