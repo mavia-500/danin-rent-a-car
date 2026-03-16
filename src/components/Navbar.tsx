@@ -16,7 +16,7 @@ const Navbar = () => {
 
   const sendWhatsappMessage = () => {
     const message = `I want to book a car . Please share details. `;
-    const url = `https://wa.me/923336732926?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/923200515737?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
     window.open(message, "_blank");
   };

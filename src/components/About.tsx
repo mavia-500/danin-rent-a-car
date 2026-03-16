@@ -65,7 +65,7 @@ const About = () => {
             </div>
 
             <a
-              href="https://wa.me/923336732926?text=can%20you%20share%20details%20about%20your%20services"
+              href="https://wa.me/923200515737?text=can%20you%20share%20details%20about%20your%20services"
               target="_blank"
               rel="noopener noreferrer"
             >
