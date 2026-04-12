@@ -7,6 +7,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import SocialSidebar from "@/components/SocialSidebar";
+import WeddingEvents from "@/components/WeddingEvents";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <Hero />
       <About />
       <Services />
+      <WeddingEvents/>
       <Fleet />
       <WhyChooseUs />
       <FAQ />

@@ -19,7 +19,7 @@ const features = [
 
 const About = () => {
   return (
-    <section id="about-us" className="py-24 pt-32 bg-background">
+    <section id="about" className="py-24 pt-32 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
